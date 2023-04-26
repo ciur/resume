@@ -20,10 +20,10 @@
 % Custom sectioning with secsty
 \usepackage{sectsty}
 
-\sectionfont{%                        
-	\large % make sections smaller
-	\fontfamily{qag}\selectfont % change font family
-	\sectionrule{0pt}{0pt}{-5pt}{1pt} % insert a thin rule
+\sectionfont{%
+    \large % make sections smaller
+    \fontfamily{qag}\selectfont % change font family
+    \sectionrule{0pt}{0pt}{-5pt}{1pt} % insert a thin rule
 }
 
 \newlength{\spacebox}
@@ -34,162 +34,167 @@
 
 % name
 \newcommand{\name}[1]{
-	\Huge % font size
-	\fontfamily{phv}\selectfont % font family
-	% print name centered and bold
-	\begin{center} \textbf{#1} \end{center}\par
-	% back to normal size and font
-	\normalsize\normalfont}
+    \Huge % font size
+    \fontfamily{phv}\selectfont % font family
+    % print name centered and bold
+    \begin{center} \textbf{#1} \end{center}\par
+    % back to normal size and font
+    \normalsize\normalfont}
 
 % motto
 \newcommand{\motto}[1]{
-	\large % font size
-	\fontfamily{phv}\selectfont % font family
-	% print motto centered and slanted
-	\textsl{#1}\par
-	% back to normal size and font
-	\normalsize \normalfont}
+    \large % font size
+    \fontfamily{phv}\selectfont % font family
+    % print motto centered and slanted
+    \textsl{#1}\par
+    % back to normal size and font
+    \normalsize \normalfont}
 
 % personal information
 \newcommand{\info}[2]{
-	% set specific indentation for personal information
-	\noindent\hangindent=2em\hangafter=0
-	% create a box to align two pieces of text
-	\parbox{\spacebox}{%
-		\textsl{#1}} % slanted entry name
-	#2 \par} % entry value
+    % set specific indentation for personal information
+    \noindent\hangindent=2em\hangafter=0
+    % create a box to align two pieces of text
+    \parbox{\spacebox}{%
+        \textsl{#1}} % slanted entry name
+    #2 \par} % entry value
 
 % skill
 \newcommand{\skill}[2]{
-	% set specific indentation for personal information
-	\noindent\hangindent=2em\hangafter=0
-	% create a box to align two pieces of text
-	\parbox{3\spacebox}{% three times larger box
-		\textsc{#1}} % small caps entry name
-	#2 \par} % entry value
+    % set specific indentation for personal information
+    \noindent\hangindent=2em\hangafter=0
+    % create a box to align two pieces of text
+    \parbox{3\spacebox}{% three times larger box
+        \textsc{#1}} % small caps entry name
+    #2 \par} % entry value
 
 % language level
 \newcommand{\lan}[2]{
-	% set specific indentation for personal information
-	\noindent\hangindent=2em\hangafter=0
-	% create a box to align two pieces of text
-	\parbox{\spacebox}{%
-		\textbf{#1}} % bold font entry name
-	#2 \par}    % entry value
+    % set specific indentation for personal information
+    \noindent\hangindent=2em\hangafter=0
+    % create a box to align two pieces of text
+    \parbox{\spacebox}{%
+        \textbf{#1}} % bold font entry name
+    #2 \par}    % entry value
 
 % education entry
 \newcommand{\education}[4]{
-	
-	% name of the studies
-	\noindent  \textbf{#1}
-	% at the right the duration
-	\hfill 
-	\framebox{% duration inside a frame box
-		\parbox{6em}{%
-			\centering\textbf{#2}}} \par
-	% new paragraph with the school in italics
-	\noindent \textit{#3} \par
-	% description with no hanging and in smaller text
-	\vspace*{0.5em}
-	\noindent\hangindent=2em\hangafter=0 \small #4 
-	%back to normal size
-	\normalsize \par}
+
+    % name of the studies
+    \noindent  \textbf{#1}
+    % at the right the duration
+    \hfill
+    \framebox{% duration inside a frame box
+        \parbox{6em}{%
+            \centering\textbf{#2}}} \par
+    % new paragraph with the school in italics
+    \noindent \textit{#3} \par
+    % description with no hanging and in smaller text
+    \vspace*{0.5em}
+    \noindent\hangindent=2em\hangafter=0 \small #4
+    %back to normal size
+    \normalsize \par}
 
 
 % work experience
 
 \newcommand{\work}[4]{
-	% name of the work
-	\noindent  \textbf{#1}
-	% at the right the duration
-	\hfill 
-	\framebox{% duration inside a frame box
-		\parbox{10em}{%
-			\centering\textbf{#2}}} \par
-	% new paragraph with the school in italics
-	\noindent \textit{#3} \par
-	% description with no hanging and in smaller text
-	\vspace*{0.5em}
-	\noindent\hangindent=2em\hangafter=0 \small #4 
-	%back to normal size
-	\normalsize \par}
+    % name of the work
+    \noindent  \textbf{#1}
+    % at the right the duration
+    \hfill
+    \framebox{% duration inside a frame box
+        \parbox{10em}{%
+            \centering\textbf{#2}}} \par
+    % new paragraph with the school in italics
+    \noindent \textit{#3} \par
+    % description with no hanging and in smaller text
+    \vspace*{0.5em}
+    \noindent\hangindent=2em\hangafter=0 \small #4
+    %back to normal size
+    \normalsize \par}
 
 
 \begin{document}
-	\name{Eugen Ciur}
+    \name{Eugen Ciur}
 
-    \motto{I am Sr. software developer with more then 15 years of
-    	experience in various IT domains. In last 10 years I was mostly
-    	focused on building web services which use python as main
-    	back-end language. I am looking for full time employment.
+    \motto{
+        I am Sr. software developer with more then 15 years of
+        experience in various IT domains. In last 10 years I was mostly
+        focused on building web services which use python as main
+        back-end language. I am looking for full time employment.
     }
-	% Personal Information
-	\sepspace
-	\info{Email}{\texttt{ciur.eugen@gmail.com}}
-	\info{Phone}{+49 15736195069}
-	\info{Address}{Trusetaler Str. 90, 12687 Berlin, Germany}
+    % Personal Information
+    \sepspace
+    \info{Email}{\texttt{ciur.eugen@gmail.com}}
+    \info{Phone}{+49 15736195069}
+    \info{Address}{Trusetaler Str. 90, 12687 Berlin, Germany}
 
-	% work experience
-	\section*{Work Experience}
-	
-	\work{Team Lead}{11.2022 - Present}{IONOS Cloud, Berlin}{	
-		In my team lead role I manage a small team of four persons
-		which consists of two developers, one QA engineer and me.
-		We use SCRUM as base framework for organizing our
-		development process. Our team is responsible for maintaining
-		two internal web services (Django and Flask based
-		respectively).
-	}
-	
-	\sepspace
-	
-	\work{Software Engineer}{12.2012 - 12.2018}{ORACLE, Berlin}{I maintained web frontend of the VoIP Monitoring solution used
-		by hundreds big Telecoms and Service Providers. Mostly I
-		dealt with python related back-end and js/css/html based front-
-		end.}
-	
-	\sepspace
+    % work experience
+    \section*{Work Experience}
 
-	\work{Full Stack Software Developer}{01.2012 - 06.2012}{Mediapeers, Berlin, Germany}{At this position I maintained a full-stack web application based
-		on RubyOnRails web framework}
-	
-	\sepspace
-	
-	\work{Research and Development Engineer}{11.2009 - 11.2011}{PrimeTel, Limassol, Cyprus}{
-	During my research activity at PrimeTel I led development of
-	IPTV commerce solution (in RubyOnRails): IPTV
-	COMMERCE is a nationally funded by the Cyprus Research
-	Promotion Foundation project. The project dealt with the study
-	of required infrastructure on the support of total of services via
-	the IPTV platform.
-	}
-	
-	\sepspace
+    \work{Team Lead}{11.2022 - Present}{IONOS Cloud, Berlin}{
 
-	\work{Software Developer}{12.2007 - 11.2009}{Amdocs, Limassol, Cyprus}{
-	Various projects in C/C++/Java/SQL
-	}
+        In my team lead role I manage a small team of four persons
+        which consists of two developers, one QA engineer and me.
+        We use SCRUM as base framework for organizing our
+        development process. Our team is responsible for maintaining
+        two internal web services (Django and Flask based
+        respectively).
+    }
 
-	% education
-	\section*{Education}
-		
-	\education{Bachelor's Degree in Computer Science}{2002-2007}{Universitatea Politechnica din Buchuresti}{Bucharest, Romania}
-	
-	\education{High School with focus on Math and Informatics}{1998--2001}{Chisinau, Rep. of Moldova}
-	
-	% technical skills
-	\section*{Technical skills}
-	
-	\skill{Programming languages}{Python, TypeScript, Go, Rust, C/C++, Java}
-	\skill{Cloud}{Docker, Kubernetes}
-	
-	% languages
-	\section*{Languages}
-	\lan{English}{Full Professional}
-	\lan{German}{B2}
-	\lan{Romanian}{Native}
-	\lan{Russian}{C1}
-	\lan{Spanish}{A2}
-		
-	
-	\end{document}
+    \sepspace
+
+    \work{Software Engineer}{12.2012 - 12.2018}{ORACLE, Berlin}{
+        I maintained web frontend of the VoIP Monitoring solution used
+        by hundreds big Telecoms and Service Providers. Mostly I
+        dealt with python related back-end and js/css/html based front-
+        end.
+    }
+
+    \sepspace
+
+    \work{Full Stack Software Developer}{01.2012 - 06.2012}{Mediapeers, Berlin, Germany}{
+        At this position I maintained a full-stack web application based
+        on RubyOnRails web framework
+    }
+    \sepspace
+
+    \work{Research and Development Engineer}{11.2009 - 11.2011}{PrimeTel, Limassol, Cyprus}{
+        During my research activity at PrimeTel I led development of
+        IPTV commerce solution (in RubyOnRails): IPTV
+        COMMERCE is a nationally funded by the Cyprus Research
+        Promotion Foundation project. The project dealt with the study
+        of required infrastructure on the support of total of services via
+        the IPTV platform.
+    }
+
+    \sepspace
+
+    \work{Software Developer}{12.2007 - 11.2009}{Amdocs, Limassol, Cyprus}{
+    Various projects in C/C++/Java/SQL
+    }
+
+    % education
+    \section*{Education}
+
+    \education{Bachelor's Degree in Computer Science}{2002-2007}{Universitatea Politechnica din Buchuresti}{Bucharest, Romania}
+
+    \education{High School with focus on Math and Informatics}{1998--2001}{Chisinau, Rep. of Moldova}
+
+    % technical skills
+    \section*{Technical skills}
+
+    \skill{Programming languages}{Python, TypeScript, Go, Rust, C/C++, Java}
+    \skill{Cloud}{Docker, Kubernetes}
+
+    % languages
+    \section*{Languages}
+    \lan{English}{Full Professional}
+    \lan{German}{B2}
+    \lan{Romanian}{Native}
+    \lan{Russian}{C1}
+    \lan{Spanish}{A2}
+
+
+    \end{document}
