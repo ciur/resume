@@ -13,12 +13,12 @@ jobs:
       run: sudo apt-get install -y texlive-latex-extra texlive-fonts-extra
 
     - name: build pdf
-      run: pdflatex src/resume-en.pdf
+      run: pdflatex src/resume-en.tex
 
     - uses: actions/upload-artifact@v3
       with:
         name: my_resume.pdf
-        path: src/resume-en.pdf
+        path: resume-en.pdf
 #    - uses: actions/download-artifact@v3
 #      with:
 #        name: my_resume.pdf
