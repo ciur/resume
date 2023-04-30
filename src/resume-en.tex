@@ -1,200 +1,111 @@
-\documentclass[12pt]{article}
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+%% Personal data
+\firstname{Eugen}
+\familyname{Ciur}
+\title{Sr. Python Developer} 
+\address{Trusetaler str 90}{12687 Berlin, Germany} 
+\mobile{+49 15736195069} 
+\email{ciur.eugen@gmail.com} 
+\homepage{github.com/ciur} 
 
 
-\usepackage{geometry}
-\usepackage[english]{babel} % multilingual support
-\usepackage[utf8]{inputenc} % encoding
-\usepackage{tgpagella}
-
-\geometry{
-    a4paper,
-    left=2cm,
-    right=2cm,
-    top=1cm,
-    bottom=1cm
-}
-
-% empty the headers, footers, pagenumbers…
-\pagestyle{empty}
-
-% Custom sectioning with secsty
-\usepackage{sectsty}
-
-\sectionfont{%
-    \large % make sections smaller
-    \fontfamily{qag}\selectfont % change font family
-    \sectionrule{0pt}{0pt}{-5pt}{1pt} % insert a thin rule
-}
-
-\newlength{\spacebox}
-\settowidth{\spacebox}{123456789}
-
-% vertical space separator between entries
-\newcommand{\sepspace}{\vspace*{1em}}
-
-% name
-\newcommand{\name}[1]{
-    \Huge % font size
-    \fontfamily{phv}\selectfont % font family
-    % print name centered and bold
-    \begin{center} \textbf{#1} \end{center}\par
-    % back to normal size and font
-    \normalsize\normalfont}
-
-% motto
-\newcommand{\motto}[1]{
-    \large % font size
-    \fontfamily{phv}\selectfont % font family
-    % print motto centered and slanted
-    \textsl{#1}\par
-    % back to normal size and font
-    \normalsize \normalfont}
-
-% personal information
-\newcommand{\info}[2]{
-    % set specific indentation for personal information
-    \noindent\hangindent=2em\hangafter=0
-    % create a box to align two pieces of text
-    \parbox{\spacebox}{%
-        \textsl{#1}} % slanted entry name
-    #2 \par} % entry value
-
-% skill
-\newcommand{\skill}[2]{
-    % set specific indentation for personal information
-    \noindent\hangindent=2em\hangafter=0
-    % create a box to align two pieces of text
-    \parbox{3\spacebox}{% three times larger box
-        \textsc{#1}} % small caps entry name
-    #2 \par} % entry value
-
-% language level
-\newcommand{\lan}[2]{
-    % set specific indentation for personal information
-    \noindent\hangindent=2em\hangafter=0
-    % create a box to align two pieces of text
-    \parbox{\spacebox}{%
-        \textbf{#1}} % bold font entry name
-    #2 \par}    % entry value
-
-% education entry
-\newcommand{\education}[4]{
-
-    % name of the studies
-    \noindent  \textbf{#1}
-    % at the right the duration
-    \hfill
-    \framebox{% duration inside a frame box
-        \parbox{6em}{%
-            \centering\textbf{#2}}} \par
-    % new paragraph with the school in italics
-    \noindent \textit{#3} \par
-    % description with no hanging and in smaller text
-    \vspace*{0.5em}
-    \noindent\hangindent=2em\hangafter=0 \small #4
-    %back to normal size
-    \normalsize \par}
-
-
-% work experience
-
-\newcommand{\work}[4]{
-    % name of the work
-    \noindent  \textbf{#1}
-    % at the right the duration
-    \hfill
-    \framebox{% duration inside a frame box
-        \parbox{10em}{%
-            \centering\textbf{#2}}} \par
-    % new paragraph with the school in italics
-    \noindent \textit{#3} \par
-    % description with no hanging and in smaller text
-    \vspace*{0.5em}
-    \noindent\hangindent=2em\hangafter=0 \small #4
-    %back to normal size
-    \normalsize \par}
-
-
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
 \begin{document}
-    \name{Eugen Ciur}
-
-    \motto{
-        I am Sr. software developer with more then 15 years of
-        experience in various IT domains. In last 10 years I was mostly
-        focused on building web services which use python as main
-        back-end language. I am looking for full time employment.
-    }
-    % Personal Information
-    \sepspace
-    \info{Email}{\texttt{ciur.eugen@gmail.com}}
-    \info{Phone}{+49 15736195069}
-    \info{Address}{Trusetaler Str. 90, 12687 Berlin, Germany}
-
-    % work experience
-    \section*{Work Experience}
-
-    \work{Team Lead}{11.2022 - Present}{IONOS Cloud, Berlin}{
-
-        In my team lead role I manage a small team of four persons
-        which consists of two developers, one QA engineer and me.
-        We use SCRUM as base framework for organizing our
-        development process. Our team is responsible for maintaining
-        two internal web services (Django and Flask based
-        respectively).
-    }
-
-    \sepspace
-
-    \work{Software Engineer}{12.2012 - 12.2018}{ORACLE, Berlin}{
-        I maintained web frontend of the VoIP Monitoring solution used
-        by hundreds big Telecoms and Service Providers. Mostly I
-        dealt with python related back-end and js/css/html based front-
-        end.
-    }
-
-    \sepspace
-
-    \work{Full Stack Software Developer}{01.2012 - 06.2012}{Mediapeers, Berlin, Germany}{
-        At this position I maintained a full-stack web application based
-        on RubyOnRails web framework
-    }
-    \sepspace
-
-    \work{Research and Development Engineer}{11.2009 - 11.2011}{PrimeTel, Limassol, Cyprus}{
-        During my research activity at PrimeTel I led development of
-        IPTV commerce solution (in RubyOnRails): IPTV
-        COMMERCE is a nationally funded by the Cyprus Research
-        Promotion Foundation project. The project dealt with the study
-        of required infrastructure on the support of total of services via
-        the IPTV platform.
-    }
-
-    \sepspace
-
-    \work{Software Developer}{12.2007 - 11.2009}{Amdocs, Limassol, Cyprus}{
-    Various projects in C/C++/Java/SQL
-    }
-
-    % education
-    \section*{Education}
-
-    \education{Bachelor's Degree in Computer Science}{2002-2007}{Universitatea Politechnica din Buchuresti}{Bucharest, Romania}
-
-    \education{High School with focus on Math and Informatics}{1998--2001}{Chisinau, Rep. of Moldova}
-
-    % technical skills
-    \section*{Technical skills}
-
-    \skill{Programming languages}{Python, TypeScript, Go, Rust, C/C++, Java}
-    \skill{Cloud}{Docker, Kubernetes}
-
-    % languages
-    \section*{Languages}
-    \lan{English}{Full Professional}
-    \lan{German}{B2}
-    \lan{Romanian}{Native}
-    \lan{Russian}{C1}
-    \lan{Spanish}{A2}
-
-
-    \end{document}
+	\makecvtitle
+	
+	I am Sr. software developer with more then 15 years of
+	experience. In last 10 years I was mostly
+	focused on building web services which use python as main
+	back-end language. I am looking for full time employment.
+	
+	\section{Tech Skills}
+	\cvdoubleitem{Languages}{Python, TypeScript/JavaScript, C/C++, Go, Rust}{Cloud}{AWS, Docker, Kubernetes, Helmcharts, ArgoCD}
+	\cvdoubleitem{Web Frameworks}{Django, Flask, FastAPI, Django REST Framework, ReactJS, pytest}{CVS}{git, mercurial, github, gitlab}
+	\cvdoubleitem{Databases}{PostgreSQL, Mysql/MariaDB, SQLite}{Other}{REST API, OpenAPI, swagger, Redis, websockets}
+	\cvdoubleitem{Message Queues}{RabbitMQ, Redis, Apache Kafka}{Protocols}{TCP/IP, HTTP, IMAP, POP3}
+	
+	\section{Work Experience}
+	
+	\cventry{11.2022 -- present}{Team Lead}{IONOS Cloud}{Berlin}{ Germany }{        In my team lead role I manage a small team of four persons
+		which consists of two developers, one QA engineer and me.
+		We use SCRUM as base framework for organizing our
+		development process. Our team is responsible for maintaining
+		two internal web services (Django and Flask based
+		respectively).}
+	
+	\cventry{05.2021 -- 11.2022}{Sr. Python Developer}{IONOS Cloud}{Berlin}{ Germany }{        In was in charge of development, maintenance and deploymment of two internal applications - one Django based, another one Flask based (with ReactJS frontend). I was part of moving deployment method from classical VM based with Ansible to modern cloud native Kubernetes based (with its own Helmchart and ArgoCD syncing).}
+	
+	\cventry{12.2019 -- present}{Self Employed}{max. 4 hours/week}{Berlin}{ Germany }
+	{ Development and promotion of Django based open source DMS for digital archives Currently application has a moderate number of enthusiast users and I am providing support via github issues.
+	}
+	
+	\cvitem{homepage}{\url{https://papermerge.com}}
+	\cvitem{main repo}{\url{https://github.com/ciur/papermerge}}
+	\cvitem{documentation}{\url{https://docs.papermerge.io}}
+	\cvitem{github org}{\url{https://github.com/papermerge}}
+	
+	\cventry{12.2018 -- 12.2020}{Django Lessons}{Youtuber}{Berlin}{ Germany } {
+		I recorded 51 Python/Django/Development/Deployment youtube screencasts which were (and are) relatively popular.
+	}
+	
+	\cvitem{YT}{\url{https://www.youtube.com/@djangolessons4614}}
+	
+	\cventry{12.2012 -- 11.2018}{Software Engineer}{Oracle}{Berlin}{ Germany }{
+		I was in charge of maintenance and development web application which served
+		as front-end for a larger VoIP Monitoring solution used
+		by hundreds big telecoms and service providers. Mostly I
+		dealt with Python based back-end and JavaScript/CSS/HTML based front-
+		end. Fullstack web application was written in custom i.e.
+		in-house web framework.
+	}
+	
+	\cventry{01.2012 -- 06.2012}{RubyOnRails Developer}{Mediapeers}{Berlin}{ Germany }{
+		In this role I maintained a full-stack web application based
+		on RubyOnRails web framework. Product was web application for management of
+		media content.
+	}
+	
+	\cventry{11.2009 -- 11.2011}{R\&D Engineer}{PrimeTel}{Limassol}{ Cyprus}{
+		During my research activity at PrimeTel I led development of
+		IPTV commerce solution (in RubyOnRails): IPTV
+		COMMERCE is a nationally funded by the Cyprus Research
+		Promotion Foundation project. The project dealt with the study
+		of required infrastructure on the support of total of services via
+		the IPTV platform.
+	}
+	\cventry{12.2007 -- 11.2009}{SME Software Developer}{Amdocs}{Limassol}{ Cyprus}{
+		Various projects in C/C++/Java/SQL
+	}
+	
+	\section{Education}
+	\cventry{2002--2007}{Computer Science}{Universitatea Politehnica din Bucuresti}{Bucharest}{Romania}{
+		At Politechnica Univertity in Bucharest I completed computer scrience degree
+	} 
+	
+	\cventry{1998--2001}{Informatics}{High School with focus on Math and Informatics}{Chisinau}{Moldova}{}
+	
+	\section{Languages}
+	
+	\cvitemwithcomment{English}{Fluent}{}
+	\cvitemwithcomment{Romanian}{Native}{}
+	\cvitemwithcomment{German}{C1}{Can read, write, understand well - but not much experience in speaking}
+	\cvitemwithcomment{Russian}{B2}{}
+	\cvitemwithcomment{Spanish}{A1}{currently learning}
+	
+	
+\end{document}
