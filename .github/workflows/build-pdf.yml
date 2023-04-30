@@ -11,3 +11,9 @@ jobs:
     - uses: xu-cheng/latex-action@v2
       with:
         root_file: src/resume-en.tex
+    - uses: actions/download-artifact@v3
+      with:
+        name: my_resume.pdf
+        path: src/resume-en.pdf
+    - name: Display structure of downloaded files
+      run: ls -R
