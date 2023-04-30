@@ -8,9 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: xu-cheng/latex-action@v2
-      with:
-        root_file: src/resume-en.tex
+
+    - name: Install LaTeX
+      run: sudo apt-get install -y texlive-latex-extra texlive-fonts-extra
+
+    - name: build pdf
+      run: pdflatex src/resume-en.pdf
+
     - uses: actions/upload-artifact@v3
       with:
         name: my_resume.pdf
