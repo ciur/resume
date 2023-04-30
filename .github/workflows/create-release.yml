@@ -18,6 +18,9 @@ jobs:
       - name: build pdf
         run: pdflatex src/resume-en.tex
 
+      - name: Test
+        run: ls resume-en.pdf
+
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
