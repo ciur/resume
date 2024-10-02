@@ -28,13 +28,13 @@
 \begin{document}
     \makecvtitle
 
-    I am Sr. Software Developer with more then 15 years of
+    I am Sr. Software Engineer with more then 15 years of
     experience. In last 5 years I was mostly
     focused on building web services which use python as main
-    back-end language and are deployed in k8s cloud environments.
+    back-end language and are deployed in k8s cloud environments
 
     \section{Tech Skills}
-    \cvdoubleitem{Languages}{Python, Go, TypeScript, C/C++, Java}{Cloud}{AWS, Docker, Kubernetes, Helmcharts, ArgoCD}
+    \cvdoubleitem{Languages}{Python, Go, TypeScript, C/C++, Java}{Cloud}{AWS, Docker, Kubernetes, Helmcharts, ArgoCD, Traefik, Terraform, Packer}
     \cvdoubleitem{Web Frameworks}{Django, Flask, FastAPI, Django REST Framework, React, Redux, pytest}{CVS}{git, mercurial, github, gitlab}
     \cvdoubleitem{Databases}{PostgreSQL, Mysql/MariaDB, SQLite}{Other}{REST API, OpenAPI, swagger, CI/CD, websockets}
     \cvdoubleitem{Message Queues}{RabbitMQ, Redis}{Protocols}{TCP/IP, HTTP, IMAP, POP3, SMTP}
@@ -45,27 +45,27 @@
       At Snom I, together with my team, developed internal web application for testing phones' firmware.
       This means we developed application backend and frontend and deployed it in our internal Proxmox.
       Technically speaking, application' backend is in Python/Django/RQ. Frontend in React.
-      Deployment was performed using ansible roles (which started docker images on remove VMs).
+      Deployment was performed using ansible roles (which started docker containers on remote VMs).
       Deployment was triggered via Jenkins jobs. Application's authentication was based on company's internal LDAP.
-      Our team was responsable for infracture as well (i.e. we managed proxmox and VMs in it).
+      Our team was responsible for infrastructure as well (i.e. we managed Proxmox and VMs in it).
       }
 
     \cventry{11.2022 -- 09.2023}{Team Lead}{IONOS Cloud}{Berlin}{ Germany }{
-      In my team lead role I manage a small team of four persons
-        which consists of two developers, one QA engineer and me.
-        We use SCRUM as base framework for organizing our
-        development process. Our team is responsible for maintaining
+      In my team lead role I managed a small team of four persons
+        which consisted of two developers, one QA engineer and me.
+        We used SCRUM as base framework for organizing our
+        development process. Our team was responsible for maintaining
         two internal web services (Django and Flask based
         respectively). Technically speaking, application was classical all-backend based Python/Django/Celery
         (i.e. no react frontend). Application was deployed in company's internal k8s cluster.
-        Our team was in charge of app's Helmcharts. Internally app had a prometheus endpoint
-        which was scraped into our internal grafana/loki and used for app monitoring and performance tuning.
+        Our team was in charge of app's Helmcharts. Internally app had a Prometheus endpoint
+        which was scraped into our internal Grafana/Loki and used for app monitoring and performance tuning.
       }
 
    \vspace{0.4cm}
 
     \cventry{05.2021 -- 11.2022}{Sr. Python Developer}{IONOS Cloud}{Berlin}{ Germany }{
-      In was in charge of development, maintenance and deploymment of two internal applications - one Django based,
+      In was in charge of development, maintenance and deployment of two internal applications - one Django based,
       another one Flask based (with ReactJS frontend).
       I was part of moving deployment method from classical VM based with Ansible to modern cloud native Kubernetes based
       (with its own Helmchart and ArgoCD syncing).
@@ -79,12 +79,15 @@
       is cloud native application - which means it designed to be deployed in k8s environments and
       monitored using prometheus KPI. It uses SOLR as search engine. It can be
       integrated with external authentication systems like Keycloak.
+      See "Helm Charts" item below "Helm Charts" for the link with official helm chart
+      written (by me) for Papermerge DMS.
     }
 
     \cvitem{homepage}{\url{https://papermerge.com}}
     \cvitem{main repo}{\url{https://github.com/ciur/papermerge}}
     \cvitem{documentation}{\url{https://docs.papermerge.io}}
     \cvitem{github org}{\url{https://github.com/papermerge}}
+    \cvitem{Helm Charts}{\url{https://github.com/papermerge/helm-chart}}
 
   \vspace{0.4cm}
 
@@ -143,7 +146,6 @@
     \cvitemwithcomment{English}{Fluent}{}
     \cvitemwithcomment{Romanian}{Native}{}
     \cvitemwithcomment{German}{C1}{Can read, write, understand well - but not much experience in speaking}
-    \cvitemwithcomment{Spanish}{A1}{currently learning}
 
   \section{Extras}
 
