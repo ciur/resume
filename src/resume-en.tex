@@ -15,7 +15,7 @@
 %% Personal data
 \firstname{Eugen}
 \familyname{Ciur}
-\title{Sr. Python Developer}
+\title{Sr. Software Engineer}
 \address{Trusetaler str 90}{12687 Berlin, Germany}
 \mobile{+49 15736195069}
 \email{ciur.eugen@gmail.com}
@@ -28,42 +28,68 @@
 \begin{document}
     \makecvtitle
 
-    I am Sr. software developer with more then 15 years of
-    experience. In last 10 years I was mostly
+    I am Sr. Software Engineer with more then 15 years of
+    experience. In last 5 years I was mostly
     focused on building web services which use python as main
-    back-end language.
+    back-end language and are deployed in k8s cloud environments
 
     \section{Tech Skills}
-    \cvdoubleitem{Languages}{Python, TypeScript/JavaScript, C/C++}{Cloud}{AWS, Docker, Kubernetes, Helmcharts, ArgoCD}
-    \cvdoubleitem{Web Frameworks}{Django, Flask, FastAPI, Django REST Framework, ReactJS, pytest}{CVS}{git, mercurial, github, gitlab}
+    \cvdoubleitem{Languages}{Python, Go, TypeScript, C/C++, Java}{Cloud}{AWS, Docker, Kubernetes, Helmcharts, ArgoCD, Traefik, Terraform, Packer}
+    \cvdoubleitem{Web Frameworks}{Django, Flask, FastAPI, Django REST Framework, React, Redux, pytest}{CVS}{git, mercurial, github, gitlab}
     \cvdoubleitem{Databases}{PostgreSQL, Mysql/MariaDB, SQLite}{Other}{REST API, OpenAPI, swagger, CI/CD, websockets}
-    \cvdoubleitem{Message Queues}{RabbitMQ, Redis}{Protocols}{TCP/IP, HTTP, IMAP, POP3}
+    \cvdoubleitem{Message Queues}{RabbitMQ, Redis}{Protocols}{TCP/IP, HTTP, IMAP, POP3, SMTP}
 
     \section{Work Experience}
 
-    \cventry{11.2022 -- present}{Team Lead}{IONOS Cloud}{Berlin}{ Germany }{        In my team lead role I manage a small team of four persons
-        which consists of two developers, one QA engineer and me.
-        We use SCRUM as base framework for organizing our
-        development process. Our team is responsible for maintaining
+    \cventry{09.2023 -- 31.10.2024}{Software Developer}{Snom Gmbh}{Berlin}{ Germany }{
+      At Snom I, together with my team, developed internal web application for testing phones' firmware.
+      This means we developed application backend and frontend and deployed it in our internal Proxmox.
+      Technically speaking, application' backend is in Python/Django/RQ. Frontend in React.
+      Deployment was performed using ansible roles (which started docker containers on remote VMs).
+      Deployment was triggered via Jenkins jobs. Application's authentication was based on company's internal LDAP.
+      Our team was responsible for infrastructure as well (i.e. we managed Proxmox and VMs in it).
+      }
+
+    \cventry{11.2022 -- 09.2023}{Team Lead}{IONOS Cloud}{Berlin}{ Germany }{
+      In my team lead role I managed a small team of four persons
+        which consisted of two developers, one QA engineer and me.
+        We used SCRUM as base framework for organizing our
+        development process. Our team was responsible for maintaining
         two internal web services (Django and Flask based
-        respectively).}
+        respectively). Technically speaking, application was classical all-backend based Python/Django/Celery
+        (i.e. no react frontend). Application was deployed in company's internal k8s cluster.
+        Our team was in charge of app's Helmcharts. Internally app had a Prometheus endpoint
+        which was scraped into our internal Grafana/Loki and used for app monitoring and performance tuning.
+      }
 
    \vspace{0.4cm}
 
-    \cventry{05.2021 -- 11.2022}{Sr. Python Developer}{IONOS Cloud}{Berlin}{ Germany }{        In was in charge of development, maintenance and deploymment of two internal applications - one Django based, another one Flask based (with ReactJS frontend). I was part of moving deployment method from classical VM based with Ansible to modern cloud native Kubernetes based (with its own Helmchart and ArgoCD syncing).}
+    \cventry{05.2021 -- 11.2022}{Sr. Python Developer}{IONOS Cloud}{Berlin}{ Germany }{
+      In was in charge of development, maintenance and deployment of two internal applications - one Django based,
+      another one Flask based (with ReactJS frontend).
+      I was part of moving deployment method from classical VM based with Ansible to modern cloud native Kubernetes based
+      (with its own Helmchart and ArgoCD syncing).
+     }
 
     \vspace{0.4cm}
 
     \cventry{12.2019 -- present}{Self Employed}{max. 4 hours/week}{Berlin}{ Germany }
-    { Development and promotion of Django based open source DMS for digital archives Currently application has a moderate number of enthusiast users and I am providing support via github issues.
+    {
+      Development and promotion of open source DMS for digital archives. Technically, Papermerge DMS
+      is cloud native application - which means it designed to be deployed in k8s environments and
+      monitored using prometheus KPI. It uses SOLR as search engine. It can be
+      integrated with external authentication systems like Keycloak.
+      See "Helm Charts" item below "Helm Charts" for the link with official helm chart
+      written (by me) for Papermerge DMS.
     }
 
     \cvitem{homepage}{\url{https://papermerge.com}}
     \cvitem{main repo}{\url{https://github.com/ciur/papermerge}}
     \cvitem{documentation}{\url{https://docs.papermerge.io}}
     \cvitem{github org}{\url{https://github.com/papermerge}}
+    \cvitem{Helm Charts}{\url{https://github.com/papermerge/helm-chart}}
 
-	\vspace{0.4cm}
+  \vspace{0.4cm}
 
     \cventry{12.2018 -- 12.2020}{Django Lessons}{Youtuber}{Berlin}{ Germany } {
         I recorded 51 Python/Django/Development/Deployment youtube screencasts which were (and are) relatively popular.
@@ -83,7 +109,7 @@
         in-house web framework.
     }
 
-	\vspace{0.4cm}
+  \vspace{0.4cm}
 
     \cventry{01.2012 -- 06.2012}{RubyOnRails Developer}{Mediapeers}{Berlin}{ Germany }{
         In this role I maintained a full-stack web application based
@@ -91,7 +117,7 @@
         media content.
     }
 
-	\vspace{0.4cm}
+  \vspace{0.4cm}
 
     \cventry{11.2009 -- 11.2011}{R\&D Engineer}{PrimeTel}{Limassol}{ Cyprus}{
         During my research activity at PrimeTel I led development of
@@ -102,7 +128,7 @@
         the IPTV platform.
     }
 
-	\vspace{0.4cm}
+  \vspace{0.4cm}
 
     \cventry{12.2007 -- 11.2009}{SME Software Developer}{Amdocs}{Limassol}{ Cyprus}{
         Various projects in C/C++/Java/SQL
@@ -120,16 +146,13 @@
     \cvitemwithcomment{English}{Fluent}{}
     \cvitemwithcomment{Romanian}{Native}{}
     \cvitemwithcomment{German}{C1}{Can read, write, understand well - but not much experience in speaking}
-    \cvitemwithcomment{Russian}{B2}{}
-    \cvitemwithcomment{Spanish}{A1}{currently learning}
-    
-	\section{Extras}
 
-	\begin{itemize}
-		\item 2002 - I won silver medal at 19-th Balkan Mathematical Olympiad, Antalya, Turkey
-		\item 2002 - I won 2nd National Prize at Math Olympiad (ro: Olimpiada Republicană de Matematică, Moldova)
-		\item 2001 - I won 3rd National Prize at Math Olympiad (ro: Olimpiada Republicană de Matematică, Moldova)
-	\end{itemize}
-    
+  \section{Extras}
+
+  \begin{itemize}
+    \item 2002 - I won silver medal at 19-th Balkan Mathematical Olympiad, Antalya, Turkey
+    \item 2002 - I won 2nd National Prize at Math Olympiad (ro: Olimpiada Republicană de Matematică, Moldova)
+    \item 2001 - I won 3rd National Prize at Math Olympiad (ro: Olimpiada Republicană de Matematică, Moldova)
+  \end{itemize}
 
 \end{document}
