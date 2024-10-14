@@ -1,0 +1,128 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+%% Personal data
+\firstname{Eugen}
+\familyname{Ciur}
+\title{Sr. Python/Django Developer}
+\address{Trusetaler str 90}{12687 Berlin, Deutschland}
+\mobile{+49 15736195069}
+\email{ciur.eugen@gmail.com}
+\homepage{github.com/ciur}
+
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+    \makecvtitle
+
+    Ich bin Sr. Software-Entwickler mit mehr als 15 Jahren Erfahrung. In den
+    letzten 10 Jahren ich beschäftigte mich mit Python basierte Webservices
+
+    \section{Tech Skills}
+    \cvdoubleitem{Sprachen}{Python, TypeScript, JavaScript, SQL}{Cloud}{AWS, Docker, Kubernetes, Helmcharts, ArgoCD, Traefik, Terraform, Packer}
+    \cvdoubleitem{Open Source Packete}{SQLAlchemy, Redux, React, pytest, pydantic}{Suchmotoren}{SOLR, Elasticsearch}
+    \cvdoubleitem{Frameworks}{Django, Flask, FastAPI, DRF}{CVS}{git, mercurial, github, gitlab}
+    \cvdoubleitem{Datenbanken}{PostgreSQL, Mysql/MariaDB, SQLite}{Sonstiges}{REST API, OpenAPI, swagger, CI/CD, websockets, HTML, CSS/SASS}
+    \cvdoubleitem{Message Queues}{RabbitMQ, Redis, Celery, RQ}{Protocols}{TCP/IP, HTTP, IMAP, POP3, SMTP, LDAP}
+
+    \section{Berufserfahrung}
+
+    \cventry{09.2023 -- 31.10.2024}{Software-Entwickler}{Snom Gmbh}{Berlin}
+     { Deutschland }{ Bei Snom habe ich zusammen mit meinem Team eine interne
+     Webanwendung zum Testen der Telefon-Firmware entwickelt. Technisch
+     gesehen, ist das Backend der Anwendung in Python/Django/RQ. Frontend in
+     React. Die Deployment erfolgte mithilfe von Ansible.}
+
+    \cventry{11.2022 -- 09.2023}{Team Leiter}{IONOS Cloud}{Berlin}
+     { Deutschland }{ In meiner Rolle als Teamleiter leitete ich ein kleines
+     Team von vier Personen das aus zwei Entwicklern, einem QA-Ingenieur und
+     mir bestand. Unser Team war verantwortlich für die Wartung
+     zwei interne Webdienste (ein in Django und andere in Flask).
+     Technisch gesehen war die Anwendung auf Basis
+     von Python/Django/Celery (d.h. kein React-Frontend). Die Anwendung wurde im
+     internen k8s-Cluster des Unternehmens deployed. Unser Team war für
+     die Helmcharts der Anwendung zuständig.}
+
+   \vspace{0.4cm}
+
+    \cventry{05.2021 -- 11.2022}{Sr. Python Entwickler}{IONOS Cloud}{Berlin}
+     { Deutschland }{ Ich war verantwortlich für die Entwicklung, Wartung und
+     Deployment von zwei internen Anwendungen - eine auf Django basierend,
+     eine andere auf Flask + React.}
+
+    \vspace{0.4cm}
+
+    \cventry{12.2019 -- Gegenwart}{Open Source}{max. 4 hours/week}{Berlin}{ Deutschland }
+    {Entwicklung eines Open-Source-DMS für digitale Archive}
+
+    \cvitem{Webseite}{\url{https://papermerge.com}}
+    \cvitem{Heupt Repo}{\url{https://github.com/ciur/papermerge}}
+    \cvitem{Dokumentation}{\url{https://docs.papermerge.io}}
+    \cvitem{Github Org}{\url{https://github.com/papermerge}}
+
+  \vspace{0.4cm}
+
+    \cventry{12.2018 -- 12.2020}{Django Lessons}{Youtuber}{Berlin}{ Deutschland }
+     { Ich habe 51 Python/Django/Entwicklung/Deployment-Youtube-Videos
+     aufgenommen, die relativ beliebt sind. }
+
+
+    \cvitem{YT}{\url{https://www.youtube.com/@djangolessons4614}}
+
+    \vspace{0.4cm}
+
+    \cventry{12.2012 -- 11.2018}{Software Entwickler}{Oracle}{Berlin}
+     { Deutschland }{ Ich war für die Wartung und Entwicklung einer
+     Webanwendung zuständig, die als als Front-End für eine größere
+     VoIP-Überwachungslösung diente, die die von Hunderten von großen
+     Telekommunikationsunternehmen und Dienstleistern genutzt wird. Techstack
+      Python für Backend und JavaScript/CSS/HTML für Frontend }
+
+  \vspace{0.4cm}
+
+    \cventry{01.2012 -- 06.2012}{RubyOnRails Entwickler}{Mediapeers}{Berlin}
+     { Deutschland }{ In dieser Funktion habe ich eine fullstack Webanwendung
+     auf der Grundlage RubyOnRails-Web-Framework. Das Produkt war eine
+     Webanwendung zur Verwaltung von Medieninhalten. }
+
+  \vspace{0.4cm}
+
+    \cventry{11.2009 -- 11.2011}{R\&D Engineer}{PrimeTel}{Limassol}{ Zypern}
+     { Während meiner Forschungstätigkeit bei PrimeTel leitete ich die
+     Entwicklung von IPTV-Commerce-Lösung (in RubyOnRails): IPTV COMMERCE ist
+     ein nationales, von der Cyprus Research Stiftung für Forschungsförderung.
+     Das Projekt befasste sich mit der Untersuchung der erforderlichen
+     Infrastruktur für die Unterstützung der gesamten Dienstleistungen über die
+     IPTV-Plattform. }
+
+  \vspace{0.4cm}
+
+    \cventry{12.2007 -- 11.2009}{SME Software Developer}{Amdocs}{Limassol}{ Zypern}{
+        Verschiedene Projekte in C/C++/Java/SQL
+    }
+
+    \section{Bildung}
+    \cventry{2002--2007}{Informatik}{Polytechnische Universität Bukarest}{Bukarest}{Rumänien}{
+      An der Politech-Universität in Bukarest habe ich einen Abschluss in Informatik gemacht.
+    }
+
+    \section{Languages}
+
+    \cvitemwithcomment{Englisch}{Fließend}{}
+    \cvitemwithcomment{Rumänisch }{Muttersprache}{}
+    \cvitemwithcomment{German}{B2}{}
+
+\end{document}
