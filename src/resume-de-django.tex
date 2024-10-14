@@ -1,0 +1,154 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+%% Personal data
+\firstname{Eugen}
+\familyname{Ciur}
+\title{Sr. Software-Entwickler}
+\address{Trusetaler str 90}{12687 Berlin, Germany}
+\mobile{+49 15736195069}
+\email{ciur.eugen@gmail.com}
+\homepage{github.com/ciur}
+
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+    \makecvtitle
+
+    Ich bin Sr. Software-Entwickler mit mehr als 15 Jahren Erfahrung. In den
+    letzten 5 Jahren ich beschäftigte mich mit Webservices, die Python als
+    Backend-Sprache verwenden, React als Frontend, und in k8s Cloud-Umgebungen
+    eingesetzt werden
+
+    \section{Tech Skills}
+    \cvdoubleitem{Sprachen}{Python, Go, TypeScript, C/C++, Java}{Cloud}{AWS, Docker, Kubernetes, Helmcharts, ArgoCD, Traefik, Terraform, Packer}
+    \cvdoubleitem{Web Frameworks}{Django, Flask, FastAPI, Django REST Framework, React, Redux, pytest}{CVS}{git, mercurial, github, gitlab}
+    \cvdoubleitem{Datenbanken}{PostgreSQL, Mysql/MariaDB, SQLite}{Other}{REST API, OpenAPI, swagger, CI/CD, websockets}
+    \cvdoubleitem{Message Queues}{RabbitMQ, Redis}{Protocols}{TCP/IP, HTTP, IMAP, POP3, SMTP}
+
+    \section{Berufserfahrung}
+
+    \cventry{09.2023 -- 31.10.2024}{Software-Entwickler}{Snom Gmbh}{Berlin}
+     { Deutschland }{ Bei Snom habe ich zusammen mit meinem Team eine interne
+     Webanwendung zum Testen der Telefon-Firmware entwickelt. Das heißt, wir
+     haben Backend und Frontend der Anwendung entwickelt und sie in unserem
+     internen Proxmox deployed. Technisch gesehen, ist das Backend der
+     Anwendung in Python/Django/RQ. Frontend in React. Die Bereitstellung
+     erfolgte mithilfe von Ansible (die Docker-Containers auf remote
+     VMs starteten).}
+
+    \cventry{11.2022 -- 09.2023}{Team Leiter}{IONOS Cloud}{Berlin}
+     { Deutschland }{ In meiner Rolle als Teamleiter leitete ich ein kleines
+     Team von vier Personen das aus zwei Entwicklern, einem QA-Ingenieur und
+     mir bestand. Unser Team war verantwortlich für die Wartung
+     zwei interne Webdienste (ein in Django und andere in Flask).
+     Technisch gesehen war die Anwendung auf Basis
+     von Python/Django/Celery (d.h. kein React-Frontend). Die Anwendung wurde im
+     internen k8s-Cluster des Unternehmens deployed. Unser Team war für
+     die Helmcharts der Anwendung zuständig.}
+
+   \vspace{0.4cm}
+
+    \cventry{05.2021 -- 11.2022}{Sr. Python Entwickler}{IONOS Cloud}{Berlin}
+     { Deutschland }{ Ich war verantwortlich für die Entwicklung, Wartung und
+     Deployment von zwei internen Anwendungen - eine auf Django basierend,
+     eine andere auf Flask + React.}
+
+    \vspace{0.4cm}
+
+    \cventry{12.2019 -- present}{Self Employed}{max. 4 hours/week}{Berlin}{ Germany }
+    {
+      Development and promotion of open source DMS for digital archives. Technically, Papermerge DMS
+      is cloud native application - which means it designed to be deployed in k8s environments and
+      monitored using prometheus KPI. It uses SOLR as search engine. It can be
+      integrated with external authentication systems like Keycloak.
+      See "Helm Charts" item below "Helm Charts" for the link with official helm chart
+      written (by me) for Papermerge DMS.
+    }
+
+    \cvitem{homepage}{\url{https://papermerge.com}}
+    \cvitem{main repo}{\url{https://github.com/ciur/papermerge}}
+    \cvitem{documentation}{\url{https://docs.papermerge.io}}
+    \cvitem{github org}{\url{https://github.com/papermerge}}
+    \cvitem{Helm Charts}{\url{https://github.com/papermerge/helm-chart}}
+
+  \vspace{0.4cm}
+
+    \cventry{12.2018 -- 12.2020}{Django Lessons}{Youtuber}{Berlin}{ Germany } {
+        I recorded 51 Python/Django/Development/Deployment youtube screencasts which were (and are) relatively popular.
+    }
+
+
+    \cvitem{YT}{\url{https://www.youtube.com/@djangolessons4614}}
+
+    \vspace{0.4cm}
+
+    \cventry{12.2012 -- 11.2018}{Software Engineer}{Oracle}{Berlin}{ Germany }{
+        I was in charge of maintenance and development web application which served
+        as front-end for a larger VoIP Monitoring solution used
+        by hundreds big telcoms and service providers. Mostly I
+        dealt with Python based back-end and JavaScript/CSS/HTML based front-
+        end. Fullstack web application was written in custom i.e.
+        in-house web framework.
+    }
+
+  \vspace{0.4cm}
+
+    \cventry{01.2012 -- 06.2012}{RubyOnRails Developer}{Mediapeers}{Berlin}{ Germany }{
+        In this role I maintained a full-stack web application based
+        on RubyOnRails web framework. Product was web application for management of
+        media content.
+    }
+
+  \vspace{0.4cm}
+
+    \cventry{11.2009 -- 11.2011}{R\&D Engineer}{PrimeTel}{Limassol}{ Cyprus}{
+        During my research activity at PrimeTel I led development of
+        IPTV commerce solution (in RubyOnRails): IPTV
+        COMMERCE is a nationally funded by the Cyprus Research
+        Promotion Foundation project. The project dealt with the study
+        of required infrastructure on the support of total of services via
+        the IPTV platform.
+    }
+
+  \vspace{0.4cm}
+
+    \cventry{12.2007 -- 11.2009}{SME Software Developer}{Amdocs}{Limassol}{ Cyprus}{
+        Various projects in C/C++/Java/SQL
+    }
+
+    \section{Education}
+    \cventry{2002--2007}{Computer Science}{Universitatea Politehnica din București}{Bucharest}{Romania}{
+        At Politech University in Bucharest I completed computer science degree
+    }
+
+    \cventry{1998--2001}{Informatics}{High School with focus on Math and Informatics}{Chișinău}{Moldova}{}
+
+    \section{Languages}
+
+    \cvitemwithcomment{English}{Fluent}{}
+    \cvitemwithcomment{Romanian}{Native}{}
+    \cvitemwithcomment{German}{C1}{Can read, write, understand well - but not much experience in speaking}
+
+  \section{Extras}
+
+  \begin{itemize}
+    \item 2002 - I won silver medal at 19-th Balkan Mathematical Olympiad, Antalya, Turkey
+    \item 2002 - I won 2nd National Prize at Math Olympiad (ro: Olimpiada Republicană de Matematică, Moldova)
+    \item 2001 - I won 3rd National Prize at Math Olympiad (ro: Olimpiada Republicană de Matematică, Moldova)
+  \end{itemize}
+
+\end{document}
